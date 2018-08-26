@@ -1,0 +1,51 @@
+<html>
+<head>
+  <title>Cyberlife</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  <link rel="stylesheet" href="style v2.css" />
+</head>
+<body>
+
+<div class="align">
+   <img src="https://sites.google.com/site/wwwaprendercom/home/instagram/40054296_1377255529073963_4582846163438272512_n.png?attredirects=0"	 alt="damnnn" class="cicada">
+
+  <div id="login_div" class="main-div">
+    <center>
+      <h1>Login</h1>
+      </center>
+    <input type="email" placeholder="Email..." id="email_field" />
+    <input type="password" placeholder="Password..." id="password_field" />
+
+    <button onclick="login()">Login to Account</button>
+      
+  </div>
+
+  <div id="user_div" class="loggedin-div">
+    <center>
+    <h3>Welcome User</h3>
+    <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
+      </center>
+        <button onclick="logout()">Logout</button>
+  </div>
+
+</div>
+
+  <script src="https://www.gstatic.com/firebasejs/5.4.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDaK25xpUvBhL_k5Wa_MTiXEY85FmxzAqo",
+    authDomain: "ait-hostel.firebaseapp.com",
+    databaseURL: "https://ait-hostel.firebaseio.com",
+    projectId: "ait-hostel",
+    storageBucket: "ait-hostel.appspot.com",
+    messagingSenderId: "127362585132"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="index.js"></script>
+
+</body>
+</html>
+
++
